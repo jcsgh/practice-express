@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/jcsgh/practice-express#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "cross-fetch": "^3.1.4",
+    "express": "^4.17.2",
+    "node-fetch": "^3.1.0"
   }
 }
