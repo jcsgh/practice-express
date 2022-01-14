@@ -6,6 +6,7 @@ const tipCalcRoute = require('./routes/tipCalcRoute')
 const magicRoute = require('./routes/magicRoute')
 const beerRoute = require('./routes/beerRoute')
 const formRoute = require('./routes/formRoute')
+const cardRoute = require('./routes/cardRoute')
 
 const app = express()
 const port = 3000
@@ -17,6 +18,7 @@ app.use('/tip', tipCalcRoute)
 app.use('/magic', magicRoute)
 app.use('/beer', beerRoute)
 app.use('/form', formRoute)
+app.use('/cards', cardRoute)
 
 app.get('/', (req, res)=>{
     res.status(200).json({message: "Api UP!"})
