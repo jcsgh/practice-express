@@ -37,5 +37,9 @@ cardRouter.get('/getsuit/:suit', (req,res)=>{
     }
     res.status(200).json({cards: arr})
 })
+cardRouter.get('/getrandomcard', (req, res)=>{
+    let randIdx = Math.floor(Math.random() * data.length)
+    res.status(200).json({randomcard: data[randIdx]})
+})
 
 module.exports = cardRouter
