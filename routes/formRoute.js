@@ -2,7 +2,6 @@ const express = require('express')
 const data = require('../data/formData')
 const formCheck = require('../middlewares/formChecker')
 const formRouter = express.Router()
-// const formChecker = require('../middlewares/formChecker')
 
 formRouter.get('/', (req, res)=>{
     res.status(200).json({form: data})
